@@ -16,7 +16,6 @@ public class SonarConstant {
 	public static final String SonarAPIResponse_UpdateDate="updateDate";
 	public static final String SonarAPIResponse_Author="author";
 	public static final String SonarAPIResponse_Message="message";
-
 	public static final String SonarMeasurementAPIParam_MetricKeys="metricKeys";
 	public static final String SonarMeasurementAPIParam_Component="component";
 	public static final String SonarMeasurementAPI_Measurement="MEASURES";
