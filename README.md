@@ -16,6 +16,8 @@ http://localhost:9000/api/issues/search
 ```
 http://localhost:8086
 ```
+#TODO Items : SetUp InfluxDB, Grafana and Connector properties.<br />
+#TODO Items : MockUps and Diagram for GrafanDashboard, Process Flow, Some InfluxDB Screenshots.
 
 -------------FutureScopse---------------<br /> 
 Expose API of Connector app which subscribes SonarQube  QoD matrices.
