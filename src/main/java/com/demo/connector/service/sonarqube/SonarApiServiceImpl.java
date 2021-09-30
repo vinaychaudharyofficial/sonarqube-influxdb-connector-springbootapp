@@ -1,12 +1,12 @@
 package com.demo.connector.service.sonarqube;
 
 import com.demo.connector.influxdb.entity.ApplicationEntity;
-import com.demo.connector.influxdb.entity.BranchEntity;
 import com.demo.connector.service.influxdb.InfluxDBService;
 import com.demo.connector.service.sonarqube.dto.Issue;
 import com.demo.connector.service.sonarqube.dto.Measure;
 import com.demo.connector.service.sonarqube.dto.SonarQubeResponse;
-import io.micrometer.core.instrument.util.StringUtils;
+
+import org.apache.commons.lang3.StringUtils;
 import org.influxdb.dto.Point;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.demo.connector.influxdb.InfluxDao;
 import com.demo.connector.utility.SonarConstant;
 
-import java.util.List;
 
 @Service
 public class SonarApiServiceImpl implements SonarApiService {

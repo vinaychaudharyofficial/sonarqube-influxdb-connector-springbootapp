@@ -11,6 +11,7 @@ sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
@@ -19,6 +20,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.apache.httpcomponents:httpclient'
 	implementation 'org.influxdb:influxdb-java:2.8'
+	implementation 'org.apache.commons:commons-lang3:3.0'
+	
 }
 
 test {
