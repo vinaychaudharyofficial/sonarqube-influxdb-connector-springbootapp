@@ -16,9 +16,31 @@ http://localhost:9000/api/issues/search
 ```
 http://localhost:8086
 ```
-#TODO Items : SetUp InfluxDB, Grafana and Connector properties.<br />
-#TODO Items : MockUps and Diagram for GrafanDashboard, Process Flow, Some InfluxDB Screenshots.
 
+### Install and SetUP InfluxDB <br/>
+* Download InfluxDB from https://portal.influxdata.com/downloads/ as below
+```
+wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.9_windows_amd64.zip -UseBasicParsing -OutFile influxdb-1.8.9_windows_amd64.zip Expand-Archive .\influxdb-1.8.9_windows_amd64.zip -DestinationPath 'C:\Program Files\InfluxData\influxdb\'
+```
+* Unizp influxdb archive into any location in your drive.
+* Create meta,data,wal directories under your unziped folder of your influxDB as done in above step.
+* Under your unzipped influxdb directory, Edit the file "nfluxdb.conf" and add the location of directories created in the previous step (meta/data/wal) for the similar respective sections.
+* Run the following command to install influxDB as a window service, After completion we would see message as “service influx installed successfully”,
+```
+nssm.exe install influx influxd.ext
+```
+* Now run below command to up the influx database.
+```
+influx
+```
+
+### Install and SetUP Grafana Dashboard <br/>
+* Download Grafana installer and click to install.
+```
+https://grafana.com/grafana/download?platform=windows
+```
+
+
+#TODO Items : MockUps and Diagram for GrafanDashboard, Process Flow, Some InfluxDB Screenshots.<br/>
 -------------FutureScopse---------------<br /> 
 Expose API of Connector app which subscribes SonarQube  QoD matrices.
-
